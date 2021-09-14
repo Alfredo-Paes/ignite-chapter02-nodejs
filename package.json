@@ -5,6 +5,9 @@
   "repository": "git@github.com:Alfredo-Paes/ignite-chapter02-nodejs.git",
   "author": "Alfredo Paes <alfredo.alfpaes@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev":"ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+  },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
@@ -16,6 +19,7 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
   },
   "dependencies": {
