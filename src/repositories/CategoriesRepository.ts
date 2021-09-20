@@ -12,7 +12,7 @@ class CategoriesRepository {
     this.categories = [];
   }
 
-  create({ name, description }: ICreateCategoryDTO): void {
+  createCategory({ name, description }: ICreateCategoryDTO): void {
     const category = new Category();
 
     Object.assign(category, {
@@ -22,6 +22,10 @@ class CategoriesRepository {
     });
 
     this.categories.push(category);
+  }
+
+  getCategory(): Category[] {
+    return this.categories;
   }
 }
 
